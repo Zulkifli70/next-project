@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+.divider {
+  width: 1px;
+  height: 100px; /* Sesuaikan tinggi yang diinginkan */
+  background-color: #ccc;
+}
