@@ -1,6 +1,7 @@
 import Pill from "@/app/components/Pill";
 import type { ModelDetailPageProps } from "@/app/types";
 import { getModelById } from "@/app/lib/models";
+import Link from "next/link";
 
 export default async function ModelDetailPage({
   params,
@@ -10,7 +11,8 @@ export default async function ModelDetailPage({
 
   return (
     <div className="container max-w-6xl px-4 py-8 mx-auto">
-      <article className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+      <Link href={"/3d-models"}>Back</Link>
+      <article className="grid grid-cols-1 gap-8 lg:grid-cols-2 ">
         {/* Image Section */}
         <figure className="relative overflow-hidden rounded-lg shadow-lg aspect-square"></figure>
 
