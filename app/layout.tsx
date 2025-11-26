@@ -1,4 +1,18 @@
 import "./globals.css";
+import Header from "./header";
+import { Albert_Sans, Montserrat_Alternates } from "next/font/google";
+
+const albertSans = Albert_Sans({
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const montserratAlternates = Montserrat_Alternates({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-montserrat-alternates",
+});
 
 export default function RootLayout({
   children,
@@ -7,7 +21,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body
+        className={`${albertSans.className} ${montserratAlternates.variable}`}
+      >
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }

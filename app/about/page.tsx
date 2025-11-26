@@ -23,7 +23,7 @@ const page = () => {
         </div>
       </div>
       <hr />
-      <div className="p-5 flex flex-col gap-12 md:max-w-[80%] md:flex-row md:justify-between md:items-center">
+      <div className="p-5 flex flex-col gap-12 md:max-w-[80%] md:flex-row md:justify-between">
         <div className="flex flex-col gap-5 ">
           <h1 className="text-[28px] font-bold">100K+ Models</h1>
           <p className="text-xl">
