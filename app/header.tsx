@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <div className="flex justify-between items-center p-5 ">
+    <header className="flex justify-between items-center p-5 bg-white">
       <div>
         <Link href="/">
           <Image
@@ -24,16 +24,16 @@ const Header = () => {
         </Link>
       </div>
       <div>
-        <ul className="flex gap-5">
+        <ul className="flex gap-5 text-black">
           <li className=" py-2 border-b-2 border-transparent hover:border-b-amber-500">
-            <Link href="/about/mission">3D MODELS</Link>
+            <Link href="/3d-models">3D MODELS</Link>
           </li>
           <li className=" py-2 border-b-2 border-transparent hover:border-b-amber-500">
             <Link href="/about">ABOUT </Link>
           </li>
         </ul>
       </div>
-    </div>
+    </header>
   );
 };
 
