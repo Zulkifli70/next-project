@@ -13,7 +13,7 @@ export default function ModelCard({ model }: ModelCardProps) {
         className="overflow-hidden transition-shadow bg-white rounded-lg shadow-md hover:shadow-lg"
         role="article"
       >
-        <div className="relative aspect-square"></div>
+        <div className="relative aspect-square bg-gray-200"></div>
         <div className="p-4">
           <div className="flex justify-between mb-2 min-h-[3.5rem]">
             <h2

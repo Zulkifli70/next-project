@@ -56,3 +56,7 @@ export type NavLinkProps = {
   children: ReactNode;
   isActive: boolean;
 };
+
+export type GetModelsParams = {
+  category?: string;
+};

@@ -31,7 +31,10 @@ const Header = () => {
         <div>
           <ul className="flex gap-5 text-black">
             <li className=" py-2 border-b-2 border-transparent hover:border-b-amber-500 hover:text-amber-500">
-              <NavLink href="/3d-models" isActive={pathname === "/3d-models"}>
+              <NavLink
+                href="/3d-models"
+                isActive={pathname.startsWith("/3d-models")}
+              >
                 3D MODELS
               </NavLink>
             </li>
