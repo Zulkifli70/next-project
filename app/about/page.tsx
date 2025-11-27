@@ -32,7 +32,7 @@ const page = () => {
           </p>
         </div>
 
-        <div className="divider"></div>
+        <div className="divider hidden md:block"></div>
 
         <div className="flex flex-col gap-5 ">
           <h1 className="text-[28px] font-bold">Active Community</h1>
@@ -42,7 +42,7 @@ const page = () => {
           </p>
         </div>
 
-        <div className="divider"></div>
+        <div className="divider hidden md:block"></div>
 
         <div className="flex flex-col gap-5 ">
           <h1 className="text-[28px] font-bold">Free to Use</h1>

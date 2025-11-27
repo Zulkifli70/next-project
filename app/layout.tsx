@@ -1,5 +1,5 @@
 import "./globals.css";
-import Header from "./header";
+import Header from "./components/header";
 import { Albert_Sans, Montserrat_Alternates } from "next/font/google";
 
 const albertSans = Albert_Sans({
