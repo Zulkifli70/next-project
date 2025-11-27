@@ -6,8 +6,8 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header className="flex justify-between items-center p-5 bg-white">
-      <div>
+    <header className="w-full bg-white">
+      <nav className="flex justify-between px-6 py-4">
         <Link href="/">
           <Image
             src={mobileLogo}
@@ -22,17 +22,18 @@ const Header = () => {
             className="hidden md:block"
           />
         </Link>
-      </div>
-      <div>
-        <ul className="flex gap-5 text-black">
-          <li className=" py-2 border-b-2 border-transparent hover:border-b-amber-500">
-            <Link href="/3d-models">3D MODELS</Link>
-          </li>
-          <li className=" py-2 border-b-2 border-transparent hover:border-b-amber-500">
-            <Link href="/about">ABOUT </Link>
-          </li>
-        </ul>
-      </div>
+
+        <div>
+          <ul className="flex gap-5 text-black">
+            <li className=" py-2 border-b-2 border-transparent hover:border-b-amber-500">
+              <Link href="/3d-models">3D MODELS</Link>
+            </li>
+            <li className=" py-2 border-b-2 border-transparent hover:border-b-amber-500">
+              <Link href="/about">ABOUT </Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
   );
 };
