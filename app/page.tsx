@@ -17,12 +17,8 @@ export default function Home() {
           </div>
           <button className="border-2 px-3 py-2">BROWSE MODELS</button>
         </div>
-        <div className="flex-1 ">
-          <Image
-            src={heroImg}
-            alt="hero-image"
-            className="w-full max-w-lg md:"
-          />
+        <div className="flex-1 flex justify-center">
+          <Image src={heroImg} alt="hero-image" className="w-full max-w-lg" />
         </div>
       </div>
     </main>
