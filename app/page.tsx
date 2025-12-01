@@ -1,5 +1,6 @@
 import Image from "next/image";
 import heroImg from "@/public/hero-image.png";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -15,7 +16,11 @@ export default function Home() {
               user-submitted models.
             </p>
           </div>
-          <button className="border-2 px-3 py-2">BROWSE MODELS</button>
+          <Link href={"/3d-models"}>
+            <button className="border-2 px-3 py-2 cursor-pointer hover:bg-amber-500 hover:text-white">
+              BROWSE MODELS
+            </button>
+          </Link>
         </div>
         <div className="flex-1 flex justify-center">
           <Image src={heroImg} alt="hero-image" className="w-full max-w-lg" />
