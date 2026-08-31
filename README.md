@@ -1,40 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PrintForge
 
-## Demo link
+A modern 3D printing model sharing and showcase platform built with Next.js. Browse, search, and discover 3D printing models across various categories.
 
-https://next-project-eta-vert.vercel.app/
+## Demo Link
+
+🔗 [**Live Demo**](https://next-project-eta-vert.vercel.app/)
+
+## Tech Stack
+
+| Technology | Version |
+|---|---|
+| Next.js | 16 (App Router) |
+| React | 19 |
+| TypeScript | 5 |
+| Tailwind CSS | 4 |
+| ESLint | 9 |
+
+## Project Structure
+
+```
+next-project/
+├── app/
+│   ├── page.tsx                 # Landing page with hero section
+│   ├── about/
+│   │   └── page.tsx             # About page
+│   ├── 3d-models/
+│   │   ├── page.tsx             # Model listing with search
+│   │   ├── [id]/
+│   │   │   └── page.tsx         # Individual model detail
+│   │   └── categories/
+│   │       └── [categoryName]/
+│   │           └── page.tsx     # Filtered models by category
+│   ├── components/              # Reusable UI components
+│   ├── data/                    # Static JSON mock data
+│   ├── lib/                     # Data access functions
+│   └── types/                   # TypeScript type definitions
+├── public/                      # Static assets
+├── package.json
+├── tsconfig.json
+└── next.config.ts
+```
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- **Node.js** 18.18 or later
+- **npm**, **yarn**, **pnpm**, or **bun** package manager
+
+### Installation
+
+```bash
+git clone https://github.com/your-username/next-project.git
+cd next-project
+npm install
+```
+
+### Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Production Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm run start
+```
 
-## Learn More
+### Linting
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run lint
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **3D Model Catalog** — Browse 52 curated 3D printing models across 10 categories
+- **Search** — Full-text search across model names and descriptions
+- **Category Filtering** — Sidebar navigation with active route highlighting
+- **Model Detail Pages** — Individual pages with model info, likes, and metadata
+- **Responsive Design** — Mobile-first layout with adaptive header and grid
+- **Server Components** — Optimized rendering with selective client components
 
-## Deploy on Vercel
+## Categories
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3D Printer, Art, Education, Fashion, Hobby & DIY, Household, Miniatures, Props & Cosplay, Tools, Toys & Games
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Data Architecture
+
+The project uses static mock data stored in local JSON files under `app/data/`. Data access functions are located in `app/lib/` and are designed to be easily replaceable with a real database integration.
+
+## Environment Variables
+
+No environment variables are required. The project runs entirely with local mock data.
+
+## License
+
+This project is private and not licensed for public use.
